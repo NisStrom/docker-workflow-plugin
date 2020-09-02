@@ -192,7 +192,7 @@ public class WithContainerStep extends AbstractStepImpl {
                 listener.getLogger().println(node.getDisplayName() + " does not seem to be running inside a container");
                // volumes.put(ws, ws);
                // volumes.put(tmp, tmp);
-                ws = ''
+                ws = null;
             }
 
             String command = launcher.isUnix() ? "cat" : "cmd.exe";
